@@ -1,0 +1,47 @@
+\begin{table*}[!t]
+\centering
+\caption{Quantitative Performance Comparison Across Workload Scales with Repeated Random Seeds}
+\label{tab:main_results_qhqdnet}
+\vspace{-2mm}
+\tiny
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{0.9}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{c c c c c c c}
+\hline
+\textbf{Model} & \textbf{Size} & \textbf{Acc. }($\mu \pm \sigma$) & \textbf{F1 }($\mu \pm \sigma$) & \textbf{ROC-AUC }($\mu \pm \sigma$) & \textbf{PR-AUC }($\mu \pm \sigma$) & \textbf{MCC }($\mu \pm \sigma$) \\
+\hline
+LR & 5k & 0.847 $\pm$ 0.030 & 0.315 $\pm$ 0.039 & 0.883 $\pm$ 0.009 & 0.246 $\pm$ 0.041 & 0.357 $\pm$ 0.031 \\
+RF & 5k & 0.961 $\pm$ 0.005 & 0.257 $\pm$ 0.290 & 0.925 $\pm$ 0.019 & 0.421 $\pm$ 0.148 & 0.276 $\pm$ 0.277 \\
+HGB & 5k & 0.953 $\pm$ 0.017 & 0.377 $\pm$ 0.197 & 0.916 $\pm$ 0.026 & 0.418 $\pm$ 0.157 & 0.377 $\pm$ 0.197 \\
+Q-HQDNet & 5k & \textbf{0.964 $\pm$ 0.003} & \textbf{0.407 $\pm$ 0.262} & \textbf{0.932 $\pm$ 0.017} & \textbf{0.495 $\pm$ 0.122} & \textbf{0.425 $\pm$ 0.236} \\
+\hline
+LR & 10k & 0.859 $\pm$ 0.051 & 0.337 $\pm$ 0.059 & 0.917 $\pm$ 0.007 & 0.311 $\pm$ 0.040 & 0.377 $\pm$ 0.047 \\
+RF & 10k & 0.969 $\pm$ 0.005 & 0.413 $\pm$ 0.171 & \textbf{0.966 $\pm$ 0.002} & \textbf{0.727 $\pm$ 0.051} & 0.475 $\pm$ 0.121 \\
+HGB & 10k & 0.967 $\pm$ 0.004 & 0.444 $\pm$ 0.181 & 0.953 $\pm$ 0.006 & 0.617 $\pm$ 0.076 & 0.473 $\pm$ 0.151 \\
+Q-HQDNet & 10k & \textbf{0.970 $\pm$ 0.007} & \textbf{0.451 $\pm$ 0.218} & 0.962 $\pm$ 0.004 & 0.689 $\pm$ 0.077 & \textbf{0.495 $\pm$ 0.180} \\
+\hline
+LR & 20k & 0.930 $\pm$ 0.015 & 0.455 $\pm$ 0.027 & 0.922 $\pm$ 0.003 & 0.371 $\pm$ 0.027 & 0.449 $\pm$ 0.016 \\
+RF & 20k & 0.968 $\pm$ 0.006 & 0.522 $\pm$ 0.189 & \textbf{0.964 $\pm$ 0.008} & 0.687 $\pm$ 0.100 & 0.560 $\pm$ 0.138 \\
+HGB & 20k & 0.973 $\pm$ 0.003 & 0.658 $\pm$ 0.063 & 0.958 $\pm$ 0.005 & 0.710 $\pm$ 0.033 & 0.650 $\pm$ 0.055 \\
+Q-HQDNet & 20k & \textbf{0.975 $\pm$ 0.004} & \textbf{0.715 $\pm$ 0.053} & 0.963 $\pm$ 0.004 & \textbf{0.747 $\pm$ 0.038} & \textbf{0.705 $\pm$ 0.050} \\
+\hline
+LR & 25k & 0.948 $\pm$ 0.014 & 0.530 $\pm$ 0.036 & 0.929 $\pm$ 0.003 & 0.495 $\pm$ 0.032 & 0.515 $\pm$ 0.026 \\
+RF & 25k & 0.967 $\pm$ 0.008 & 0.496 $\pm$ 0.252 & 0.969 $\pm$ 0.008 & 0.681 $\pm$ 0.124 & 0.541 $\pm$ 0.188 \\
+HGB & 25k & 0.970 $\pm$ 0.007 & 0.644 $\pm$ 0.141 & 0.970 $\pm$ 0.004 & 0.771 $\pm$ 0.037 & 0.654 $\pm$ 0.105 \\
+Q-HQDNet & 25k & \textbf{0.975 $\pm$ 0.004} & \textbf{0.732 $\pm$ 0.035} & \textbf{0.973 $\pm$ 0.002} & \textbf{0.792 $\pm$ 0.035} & \textbf{0.723 $\pm$ 0.034} \\
+\hline
+LR & 50k & 0.930 $\pm$ 0.023 & 0.449 $\pm$ 0.042 & 0.922 $\pm$ 0.002 & 0.417 $\pm$ 0.026 & 0.448 $\pm$ 0.024 \\
+RF & 50k & 0.971 $\pm$ 0.006 & 0.507 $\pm$ 0.219 & 0.962 $\pm$ 0.008 & 0.622 $\pm$ 0.118 & 0.546 $\pm$ 0.159 \\
+HGB & 50k & 0.970 $\pm$ 0.006 & 0.442 $\pm$ 0.207 & 0.959 $\pm$ 0.009 & 0.689 $\pm$ 0.108 & 0.505 $\pm$ 0.146 \\
+Q-HQDNet & 50k & \textbf{0.974 $\pm$ 0.006} & \textbf{0.624 $\pm$ 0.155} & \textbf{0.966 $\pm$ 0.005} & \textbf{0.738 $\pm$ 0.061} & \textbf{0.632 $\pm$ 0.128} \\
+\hline
+LR & 100k & 0.870 $\pm$ 0.022 & 0.328 $\pm$ 0.033 & 0.921 $\pm$ 0.001 & 0.375 $\pm$ 0.019 & 0.370 $\pm$ 0.020 \\
+RF & 100k & 0.968 $\pm$ 0.002 & 0.340 $\pm$ 0.105 & 0.956 $\pm$ 0.010 & 0.532 $\pm$ 0.093 & 0.410 $\pm$ 0.061 \\
+HGB & 100k & 0.970 $\pm$ 0.003 & 0.380 $\pm$ 0.156 & 0.954 $\pm$ 0.009 & 0.614 $\pm$ 0.087 & 0.452 $\pm$ 0.104 \\
+Q-HQDNet & 100k & \textbf{0.975 $\pm$ 0.004} & \textbf{0.577 $\pm$ 0.145} & \textbf{0.965 $\pm$ 0.004} & \textbf{0.703 $\pm$ 0.055} & \textbf{0.593 $\pm$ 0.112} \\
+\hline
+\end{tabular}
+}
+\vspace{-3mm}
+\end{table*}
